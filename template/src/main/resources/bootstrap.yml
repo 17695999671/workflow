@@ -1,0 +1,10 @@
+server:
+  port: 8210
+spring:
+  application:
+    name: client-template
+  cloud:
+    config:
+      uri: http://10.1.27.119:8111
+      profile: test
+      label: master
