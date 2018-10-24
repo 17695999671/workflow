@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a onclick="doPost();">welcome!</a>
+</body>
+<script src="/resources/static/jquery-1.10.2.min.js"></script>
+<script>
+    function doPost() {
+        $.ajax({
+            url: "http://localhost:8210/dispatch1",    //要提交的URL路径的方式
+            type: "POST",                //发送请求
+            data: {"data": "123"}, //要发送到服务器的数据
+            success: function (data) {//请求成功后要执行的代码
+                alert(123);
+            },
+            error: function () { //请求失败后要执行的代码
+                alert("显示详情失败");
+            }
+        })
+    }
+</script>
+</html>

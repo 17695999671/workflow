@@ -1,0 +1,9 @@
+server:
+  port: 8800
+spring:
+  application:
+    name: webdemo
+  mvc:
+    view:
+      suffix: .html
+#      prefix: classpath:/templates/
